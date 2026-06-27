@@ -1,0 +1,96 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #002752;
+  color: white;
+  font-family: Silom;
+  text-align: center;
+  padding: 50px;
+}
+
+p {
+  font-family: Verdana;
+}
+
+#tryagain {
+  font-family: Silom;
+}
+
+.tomatoes {
+  color: #ff0000;
+}
+
+.stinkbugs {
+  color: #00ff00;
+}
+
+button {
+  font-family: Silom;
+  height: 50px;
+  width: 100px;
+  font-size: 30px;
+  background-color: white;
+}
+
+#board {
+  height: 600px;
+  width: 600px;
+  background-image: url("./grass.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid white;
+}
+
+#board div {
+  /* background-image: url("./pipe.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px 150px; */
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.pipe {
+  height: 150px;
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  z-index: 1;
+}
+
+.mole {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  transition: bottom 0.5s ease;
+  z-index: 2;
+  filter: drop-shadow(0 0 12px #000000);
+}
+
+.bomb {
+  height: 100px;
+  width: 85px;
+  position: absolute;
+  left: 60px;
+  bottom: 50px;
+  transition: bottom 0.5s ease;
+  z-index: 2;
+  filter: drop-shadow(0 0 12px #000000);
+}
+
+.up {
+  bottom: 50px;
+}
+
+.upp {
+  bottom: 100px;
+}
